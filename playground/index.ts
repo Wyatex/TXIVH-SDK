@@ -1,3 +1,3 @@
-import { test } from "../src";
+import { stop } from "../src/client";
 
-console.log(test());
+console.log(stop());

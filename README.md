@@ -1,9 +1,11 @@
-# packageName
+# txivh-sdk-types
+
+该项目用于为 腾讯数智人SDK 生成类型带类型的函数调用。
 
 <!-- automd:badges color=yellow -->
 
-[![npm version](https://img.shields.io/npm/v/packageName?color=yellow)](https://npmjs.com/package/packageName)
-[![npm downloads](https://img.shields.io/npm/dm/packageName?color=yellow)](https://npmjs.com/package/packageName)
+[![npm version](https://img.shields.io/npm/v/txivh-sdk-types?color=yellow)](https://npmjs.com/package/txivh-sdk-types)
+[![npm downloads](https://img.shields.io/npm/dm/txivh-sdk-types?color=yellow)](https://npm.chart.dev/txivh-sdk-types)
 
 <!-- /automd -->
 
@@ -17,43 +19,67 @@ Install package:
 
 ```sh
 # ✨ Auto-detect
-npx nypm install packageName
+npx nypm install txivh-sdk-types
 
 # npm
-npm install packageName
+npm install txivh-sdk-types
 
 # yarn
-yarn add packageName
+yarn add txivh-sdk-types
 
 # pnpm
-pnpm install packageName
+pnpm install txivh-sdk-types
 
 # bun
-bun install packageName
+bun install txivh-sdk-types
+
+# deno
+deno install txivh-sdk-types
 ```
 
 <!-- /automd -->
 
 Import:
 
-<!-- automd:jsimport cjs cdn name="pkg" -->
+<!-- automd:jsimport cjs cdn name="txivh-sdk-types/client" imports="init,initAudio,play,stop,on,setVolume" -->
 
-**ESM** (Node.js, Bun)
+**ESM** (Node.js, Bun, Deno)
 
 ```js
-import {} from "pkg";
+import {
+  init,
+  initAudio,
+  play,
+  stop,
+  on,
+  setVolume,
+} from "txivh-sdk-types/client";
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const {} = require("pkg");
+const {
+  init,
+  initAudio,
+  play,
+  stop,
+  on,
+  setVolume,
+} = require("txivh-sdk-types/client");
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import {} from "https://esm.sh/pkg";
+import {
+  init,
+  initAudio,
+  play,
+  stop,
+  on,
+  setVolume,
+} from "https://esm.sh/txivh-sdk-types/client";
 ```
 
 <!-- /automd -->
@@ -76,11 +102,11 @@ import {} from "https://esm.sh/pkg";
 
 <!-- automd:contributors license=MIT -->
 
-Published under the [MIT](https://github.com/unjs/packageName/blob/main/LICENSE) license.
-Made by [community](https://github.com/unjs/packageName/graphs/contributors) 💛
+Published under the [MIT](https://github.com/Wyatex/txivh-sdk-types/blob/main/LICENSE) license.
+Made by [community](https://github.com/Wyatex/txivh-sdk-types/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/unjs/packageName/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=unjs/packageName" />
+<a href="https://github.com/Wyatex/txivh-sdk-types/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Wyatex/txivh-sdk-types" />
 </a>
 
 <!-- /automd -->

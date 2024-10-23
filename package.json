@@ -1,8 +1,8 @@
 {
-  "name": "packageName",
-  "version": "0.0.0",
+  "name": "txivh-sdk-types",
+  "version": "0.0.1",
   "description": "",
-  "repository": "unjs/packageName",
+  "repository": "Wyatex/txivh-sdk-types",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -11,6 +11,16 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./client": {
+      "types": "./dist/client/index.d.ts",
+      "import": "./dist/client/index.mjs",
+      "require": "./dist/client/index.cjs"
+    },
+    "./server": {
+      "types": "./dist/server/index.d.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -19,6 +29,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
@@ -35,6 +48,7 @@
     "@vitest/coverage-v8": "^2.0.5",
     "automd": "^0.3.8",
     "changelogen": "^0.5.5",
+    "esbuild": "^0.24.0",
     "eslint": "^9.8.0",
     "eslint-config-unjs": "^0.3.2",
     "jiti": "^2.0.0-beta.3",
